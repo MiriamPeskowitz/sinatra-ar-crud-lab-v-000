@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
     get '/' do #load form
       erb :new
     end
-    
+
 
 #show individual post
    post '/posts/new' do
