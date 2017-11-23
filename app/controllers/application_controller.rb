@@ -10,9 +10,10 @@ class ApplicationController < Sinatra::Base
     get '/' do #load form
       erb :new
     end
+    
 
 #show individual post
-   post '/posts' do
+   post '/posts/new' do
       @post = Post.create(params)
       redirect to '/posts'
     end
